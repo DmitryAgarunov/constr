@@ -1,0 +1,333 @@
+@font-face {
+	font-family: 'Open_Sans'; 
+    src: url(/fonts/Open_Sans/OpenSans-Regular.ttf); 
+}
+@font-face {
+	font-family: 'Open_Sans';
+    font-weight: bold; 
+	src: url(/fonts/Open_Sans/OpenSans-Bold.ttf); 
+}
+@font-face {
+	font-family: 'Bebas_Neue'; 
+	src: url(/fonts/Bebas_Neue/BebasNeue-Regular.ttf); 
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Open_Sans; 
+}
+.main{
+    position: relative;
+    color: white;
+    height: 100vh;
+}
+.main__background{
+    width:100%;
+    object-fit: cover;
+    height: 100vh;
+}
+.main__content{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.main__logo{
+    margin-top: 41px;
+    width: 102px;
+}
+.main__center{
+    text-align: center;
+}
+.main__title{
+    font-family: 'Bebas_Neue'; 
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    /* width: max-content; */
+}
+.main__scroll{
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 71px;
+    letter-spacing: 3.7px;
+}
+.header{
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E6E6E6
+}
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.header__nav{
+    width: 100%;
+    max-width: 411px;
+}
+.header__ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.header__li{
+    list-style: none;
+}
+.container{
+    max-width: 981px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header__a{
+    font-family: Open_Sans;
+    font-size: 12px;
+    color: #48555B;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition: 0.5s;
+}
+.header__a:hover{
+    color:#00A4E5;
+}
+.story__title{
+    text-align: center;
+    font-size: 18px;
+    color: #48555B;
+    padding-bottom: 92px;
+
+}
+.story{
+    padding-top: 49px;
+    
+}
+.story__content{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.story__text{
+    max-width: 405px;
+    width: 100%;
+}
+.blue{
+    color:#16ACE8;
+}
+.story__text--bold{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.19px;
+    color: #48555B;
+    margin-bottom: 30px;
+}
+.story__text--usual{
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.19px;
+    color:#48555B;
+
+}
+.story__pictures{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 460px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.picture{
+    position: relative;
+}
+.picture__text{
+    position: absolute;
+    top: 15px;
+    left:14px;
+    font-weight: 700;
+    font-size:24px;
+    letter-spacing:0.19px;
+    text-transform:uppercase;
+    color:#FFFFFF;
+    width: 100px;
+}
+.capabilities{
+    padding-top: 127px;
+    padding-bottom: 115px;
+}
+.capabilities__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.capabilities__left{
+    width: 200px;
+}
+.capabilities__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.51px;
+    letter-spacing: 2.31px;
+    color: #48555B;
+}
+.capabilities__right{
+    width: 587px;
+    display: flex;
+    justify-content: space-between;
+}
+.capabilities__text{
+    max-width:394px;
+    width: 100%;
+    font-size: 11px;
+}
+.capabilities__button{
+    width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+    color:white;
+    font-size:13px;
+    font-weight: 700;
+    border:none;
+    cursor: pointer;
+}
+.capabilities__card{
+    padding: 38px 23px 39px 23px;
+    width: 295px;
+    border: 1px #E6E6E6 solid;    
+}
+.card__pic{
+    margin-bottom: 25px;    
+}
+.card__title{
+    font-size: 16px;
+    color: #48555B;
+    margin-bottom: 13px;
+}
+.card__text{
+    font-size: 13px;
+    color: #48555B;
+}
+.capabilities__bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.bottom{
+    background-image: url("./img/bottom_background.webp");
+    height: 499px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+}
+.bottom__title{
+    color:#48555B;
+    font-size: 30px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.bottom__button{
+    display: block;
+    margin: 0 auto;
+    font-size: 13px;
+    width: 150px;
+    height: 40px;
+    color:#FFFFFF;
+    background-color: #00A4E5;
+    border: none;
+}
+.footer{
+    background-color: #171819;
+    margin-top: -1px;
+}
+.footer__top{
+    padding: 30px 0;
+}
+.footer__form{
+    max-width: 685px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.footer__bottom{
+    padding-top: 22px;
+    padding-bottom: 23px;
+    }
+.footer__copyright{
+    font-size: 11px;
+    color:#FFFFFF;
+    text-align: center;
+}
+.form{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+}
+.form__input{
+    max-width: 250px;
+    width: 100%;
+    padding-left: 16px;
+}
+.form__title{
+    font-size: 22px;
+    color:#FFFFFF;
+    font-weight: 700 ;
+}
+
+@media screen and (max-width:500px) {
+    .main__title{
+        font-size: 40px;
+    }
+    .story__title{
+        padding-bottom: 60px;
+    }
+    .story__pictures{
+        flex-direction: column;
+        align-items: center; 
+    }
+    .story__picture{
+        width: 100%;
+    }
+    .picture__img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 100px;
+    }
+    .capabilities{
+        padding-top: 70px;
+        padding-bottom: 10px;
+    }
+    .capabilities__left{
+        margin: 0 auto;
+    }
+    .capabilities__right{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .capabilities__card{
+        width: unset;
+    }
+    .bottom{
+        padding-top: 60px;
+    }
+}
+
