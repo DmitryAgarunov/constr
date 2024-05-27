@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'Open_Sans'; 
-    src: url(/fonts/Open_Sans/OpenSans-Regular.ttf); 
+    src: url(./fonts/Open_Sans/OpenSans-Regular.ttf); 
 }
 @font-face {
 	font-family: 'Open_Sans';
     font-weight: bold; 
-	src: url(/fonts/Open_Sans/OpenSans-Bold.ttf); 
+	src: url(./fonts/Open_Sans/OpenSans-Bold.ttf); 
 }
 @font-face {
 	font-family: 'Bebas_Neue'; 
-	src: url(/fonts/Bebas_Neue/BebasNeue-Regular.ttf); 
+	src: url(./fonts/Bebas_Neue/BebasNeue-Regular.ttf); 
 }
 *{
     box-sizing: border-box;
